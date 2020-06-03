@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+htm; {
+  scroll-behaviour: smooth;
+}
+
+body {
+  font-family: Bree Serif;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  justify-content: flex-end; 
+  align-items: center;
+  background: black;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 0 black;
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 35px;
+  font-size: 25px;
+} 
+
+.nav-list a {
+  display: block;
+  padding: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: monospace;
+  color: white;
+}
+
+.nav-list a:hover {
+  background: #5F6A6A;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url(http://avatartechworld.com/img/home-banner-WebDevelopment.jpg);
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome-section > h1 {
+  font-size: 60px;
+  font-family: monospace;
+  font-weight: 2000px;
+  color: white;
+  margin-bottom: 0em;
+}
+
+.welcome-section > p {
+  font-size: 30px;
+  margin-top: 0em;
+  font-style: italic;
+  color: silver;
+}
+
+.project-section {
+  width: 100%;
+  background: white;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: 4px solid black;
+}
+
+.project-section-header {
+  width: 700px;
+  margin: 100px auto 50px auto;
+  padding: 5px;
+  font-size: 45px;
+  color: black;
+  font-family: lato,Helvetica,Arial,Lucida,sans-serif; 
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 50px;
+  grid-gap: 60px;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+  
+}
+
+.project-title {
+  font-size: 20px;
+  background: black;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  padding: 15px;
+  margin-top: 0;
+  border-radius: 10px;
+  color: white;
+}
+
+.project-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+}
+
+.project-tile{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 22px;
+  background: #154360;
+  transition: background 0.5s ease-out;
+  margin-bottom: 100px;
+  margin-top: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+  background: #48C9B0;
+}
+
+.button:hover > i {
+  transform: translateX(2px);
+}
+
+.button > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.code {
+  color: black;
+  transition: color 0.3s ease-out;
+  font-weight: 2000;
+}
+
+.project-tile:hover .code {
+  color: white;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 ;
+  background: white;
+}
+
+.contact-section-header > h2 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.contact-section-header > p {
+  font-style: italic;
+  font-size: 25px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 25px;
+  text-shadow: 1px 1px 1px black;
+  transition: transform 0.3s ease-out;
+  margin-bottom: 50px;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 30px;
+  color: #3498DB;
+}
+
+.contact-details:hover {
+  transform: translateY(5px);
+  color: #CB4335;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  background: black;
+  border-top: 4px solid #3498DB;
+}
+
+footer > p {
+  margin: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+footer a {
+  color: #3498DB;
+}
+
+@media (max-width: 500px ) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px ) {
+  .project-section-header {
+  width: 350px;
+  margin: 10px auto 20px auto;
+  border-bottom: 0px;
+  padding: 2.5px;
+  font-size: 21px;
+  color: black;
+  font-family: lato,Helvetica,Arial,Lucida,sans-serif;;
+}
+}
+
+@media (max-width: 500px) {
+  .projects-grid {
+   display: grid;
+   grid-template-columns: auto auto;
+   margin-top: 25px;
+   grid-gap: 30px;
+   width: 80%;
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-top: 15px;
+}
+}
+
+@media (max-width: 500px ) {
+  .project-image {
+   width: 100%;
+   height: 150px;
+   border-radius: 5px;
+   box-shadow: 1px 1px black;
+}
+}
+
+@media (max-width: 500px) {
+  .project-title {
+   font-size: 11px;
+   background: black;
+   box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+   border-radius: 1px;
+   padding: 7px;
+   margin-top: 0;
+   border-radius: 4px;
+   color: white;
+}
+}
+
+@media (max-width: 500px ) {
+  .contact-section-header > h2 {
+   font-size: 28px;
+   margin-bottom: 0;
+}
+
+ .contact-section-header > p {
+   font-style: italic;
+   font-size: 16px;
+   margin-bottom: 20px;
+}
+}
+
+@media (max-width: 500px ) {
+ .welcome-section > h1 {
+   font-size: 25px;
+   font-family: monospace;
+   font-weight: 1200px;
+   color: white;
+   margin-bottom: 0em;
+}
+
+ .welcome-section > p {
+   font-size: 16px;
+   margin-top: 0em;
+   font-style: italic;
+   color: silver;
+}
+}
+
+@media (max-width: 500px ) {
+ .button {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 1px;
+  font-size: 15px;
+  background: #154360;
+  transition: background 0.5s ease-out;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+}
+}
+
+@media (max-width: 500px ) {
+ .contact-details {
+  font-size: 15px;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  transition: transform 0.3s ease-out;
+  margin-bottom: 20px;
+  padding: 7px;
+  text-decoration: none;
+  margin-top: 20px;
+  color: #3498DB;
+}
+}
+
+@media (max-width: 500px ) {
+ footer {
+  font-weight: 50;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  background: black;
+  border-top: 4px solid #3498DB;
+}
+
+ footer > p {
+  margin: 10px;
+  font-size: 12px;
+  color: white;
+}
+}
+
+@media (max-width: 500px ) {
+ .nav {
+	height: 60px;
+	box-shadow: 0 1px 0 black;
+    z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin-right: 5px;
+  font-size: 15px;
+} 
+
+.nav-list a {
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: monospace;
+  color: white;
+}
+}
